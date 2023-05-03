@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iFrame</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iFrame</h1>
     <h2>Parágrafo com link normal</h2>
-    <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a> para aprender a programar</p> 
+    <p>Acessando o site do 
+        <a href="https://www.tumblr.com/itsmsletsp" target="_blank">tumblr</a>
+        para...
+    </p> 
 
     <br>
     
     <h2>Parágrafo com Iframe</h2>
-    <p>
+    <p> <!-- tamanho padrão 300x150 -->
         Acessando o site do 
+        <iframe src="https://www.tumblr.com/itsmsletsp" frameborder="0" height="500"></iframe>
+        para...
+    </p>
+    <p>
+        <!-- target="_blank"  ->  abre o link em outra janela -->
+        Site do 
         <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
-        para aprender a programar
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+    </p>
+    <p>
+        O Repositório 
+        <iframe src="https://github.com/Piresle" frameborder="0" width="400"><a href="https://github.com/Piresle"></a></iframe>
+        no GitHub <a href="https://github.com/Piresle" target="_blank">lele</a>
+    </p>
+    <p>
+        <!-- target="_blank"  ->  abre o link em outra janela -->
+        Site do 
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no"></iframe>
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        <!-- scrolling="no" -> não tem barra de rolagem no iframe -->
     </p>
 </body>
 </html>
