@@ -1,3 +1,24 @@
 @charset "UTF-8";
 
 /* CSS GERAL */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px black;
+    padding: 10px;
+}
+
