@@ -59,3 +59,15 @@ article > p {
     margin-bottom: 20px;
     text-indent: 20px;
 }
+
+span#burger {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burger:hover {
+    background-color: midnightblue;
+    color: blanchedalmond;
+}
