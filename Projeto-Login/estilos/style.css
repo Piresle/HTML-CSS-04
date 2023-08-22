@@ -79,6 +79,27 @@ div.campo > label {
     display: none;
 }
 
+div.campo > span {
+    color: #22162ba6;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #d6bcbe98;
+    font-size: 1em;
+    width: calc(100% - 60px);
+    height: 80%;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-12px); /*usar o transform sempre na última linha*/
+}
+
+div.campo > input:focus-within {
+    background-color: #ffeaec;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -93,6 +114,7 @@ form > input[type=submit] {
 
 form > input[type=submit]:hover {
     background-color: #ffeaec;
+    color: #22162b;
 }
 
 form > a.botao {
