@@ -10,13 +10,13 @@ Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media screen and (min-width: 650px) and (max-width: 992px) {
+@media screen and (max-width: 650px) {
     body {
         background-image: linear-gradient(to top, #ffeaec, #22162b);
     }
-    section#login {
-        width: 90vh;
-        height: 300px;
+    section#login {  /* Pequenas Telas */
+        width: 60vh;
+        height: 75vw;
     }
     section#login > div#imagem {
         float: left;
@@ -29,22 +29,42 @@ Grandes Telas: acima de 1200px
     }
 }
 
-@media screen and (min-width: 992px) {
-    section#login {
+
+@media screen and (min-width: 650px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, #ffeaec, #22162b);
-    }   
-        width: 900px;
+    }
+    section#login { /* Tablet / Celular */
+        width: 90vh;
         height: 400px;
     }
     section#login > div#imagem {
         float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > dic#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #ffeaec, #22162b); 
+    }
+    section#login {  /* Grandes Telas */
+        width: 950px;
+    }
+    section#login > div#imagem {
+        float: right;
         width: 50%;
         height: 100%;
     }
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
-    }
+        }
 }
 
